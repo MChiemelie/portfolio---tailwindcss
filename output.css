@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.13 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.1.14 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -7,22 +7,16 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-sky-100: oklch(95.1% 0.026 236.824);
-    --color-sky-400: oklch(74.6% 0.16 232.661);
-    --color-blue-950: oklch(28.2% 0.091 267.935);
-    --color-white: #fff;
+    --color-red-50: oklch(97.1% 0.013 17.38);
+    --color-red-200: oklch(88.5% 0.062 18.334);
+    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-blue-400: oklch(70.7% 0.165 254.624);
     --spacing: 0.25rem;
-    --text-xs: 0.75rem;
-    --text-xs--line-height: calc(1 / 0.75);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-medium: 500;
     --font-weight-bold: 700;
-    --radius-xl: 0.75rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -182,9 +176,6 @@
   .ml-auto {
     margin-left: auto;
   }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
   }
@@ -245,6 +236,9 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
@@ -263,9 +257,8 @@
   .text-center {
     text-align: center;
   }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  .align-middle {
+    vertical-align: middle;
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -326,11 +319,6 @@
       flex-direction: row;
     }
   }
-  .sm\:justify-between {
-    @media (width >= 40rem) {
-      justify-content: space-between;
-    }
-  }
   .sm\:text-justify {
     @media (width >= 40rem) {
       text-align: justify;
@@ -338,77 +326,69 @@
   }
 }
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
-nav ul {
-  margin-top: 15px;
-  padding: 10px;
-  font-size: 20px;
+header nav {
   display: flex;
-  flex-direction: row;
-  justify-content: end;
   gap: 20px;
+  align-items: right;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
-li {
+h1 {
+  padding: 20px;
+}
+.line {
+  padding: 2000px;
+}
+.img1 {
   display: flex;
-  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
 }
-a {
+.img2 {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.img3 {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+header nav a {
   text-decoration: none;
   color: black;
-  font-weight: 100;
+}
+h1 {
+  font-size: 20PX;
+}
+header h1 {
   font-size: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.Main {
-  color: orange;
+nav a {
+  font-size: 16px;
+  margin: 0 10px;
 }
-.Content {
-  margin-top: 40px;
-  padding: 0px 100px;
-}
-.Content h1 {
-  font-weight: 700;
-  font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 15px;
-}
-.Topic {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 30px;
-}
-.Topic h2 {
-  font-weight: 550;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.Topic p {
-  color: gray;
-  font-weight: 400;
-  display: flex;
-}
-.Topic div {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-.Topic span {
-  color: rgb(115, 115, 115);
+main h2 {
   font-size: 20px;
-  gap: 100px;
 }
-.greyer {
-  opacity: 0.5;
+main p {
+  font-size: 14px;
 }
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.footer {
+  justify-items: center;
   padding: 20px;
-  gap: 20px;
+}
+@media (max-width: 70px) {
+  header nav a {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 @property --tw-font-weight {
   syntax: "*";
