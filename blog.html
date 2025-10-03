@@ -1,76 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./output.css"/>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/work.html">Work</a></li>
-                <li><a href="/blog.html" class="Main">Blog</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body>
+    <header class="p-8 ">
+      <nav class=" flex items-end">
+        <ul class="hidden sm:flex gap-4 w-fit ml-auto">
+          <li><a href="/work.html" class="text-red-400">Work</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <img
+          class="sm:hidden block gap-4 w-fit ml-auto"
+          src="/images/menu.png"
+          alt=""
+        />
+      </nav>
     </header>
-</head>
-<body>
-    <div class="Content">
-        <h1>Blog</h1>
-        <div class="Topic">
-            <h2>UI Interactions of the week</h2>
-            <div><span>12 Feb 2019</span>|<span class="greyer">Express, Handlebars</span></div>
-            <p>this is a very short Paragraph,
-                this paragrapgh is meant to be short
-                <br>oops 
-                i made a mistake in the second sentence,
-                its meanst to be paragraph, not paragrapgh
-            </p>
-            <hr>
+
+    <main class="Content">
+      <h1>Blog</h1>
+      <div class="Topic">
+        <h2>UI Interactions of the week</h2>
+        <div>
+          <span>12 Feb 2019</span>|<span class="greyer"
+            >Express, Handlebars</span
+          >
         </div>
-        <div class="Topic">
-            <h2>UI Interactions of the week</h2>
-            <div><span>12 Feb 2019</span>|<span class="greyer">Express, Handlebars</span></div>
-            <p>this is a very short Paragraph,
-                this paragrapgh is meant to be short
-                <br>damn 
-                i made a mistake in the second sentence,
-                its meanst to be paragraph, not paragrapgh
-            </p>
-            <hr>
+        <p>
+          this is a very short Paragraph, this paragrapgh is meant to be short
+          <br />oops i made a mistake in the second sentence, its meanst to be
+          paragraph, not paragrapgh
+        </p>
+        <hr />
+      </div>
+      <div class="Topic">
+        <h2>UI Interactions of the week</h2>
+        <div>
+          <span>12 Feb 2019</span>|<span class="greyer"
+            >Express, Handlebars</span
+          >
         </div>
-        <div class="Topic">
-            <h2>UI Interactions of the week</h2>
-            <div><span>12 Feb 2019</span>|<span class="greyer">Express, Handlebars</span></div>
-            <p>this is a very short Paragraph :|,
-                this paragrapgh is meant to be short
-                <br> wow
-                i made a mistake in the second sentence,
-                its meanst to be paragraph, not paragrapgh
-            </p>
-            <hr>
+        <p>
+          this is a very short Paragraph, this paragrapgh is meant to be short
+          <br />damn i made a mistake in the second sentence, its meanst to be
+          paragraph, not paragrapgh
+        </p>
+        <hr />
+      </div>
+      <div class="Topic">
+        <h2>UI Interactions of the week</h2>
+        <div>
+          <span>12 Feb 2019</span>|<span class="greyer"
+            >Express, Handlebars</span
+          >
         </div>
-        <div class="Topic">
-            <h2>UI Interactions of the week</h2>
-            <div><span>12 Feb 2019</span>|<span class="greyer">Express, Handlebars</span></div>
-            <p>this is a very short Paragraph😐,
-                this paragrapgh is meant to be short
-                <br> bruh 
-                i made a mistake in the second sentence,
-                its meanst to be paragraph, not paragrapgh
-            </p>
-            <hr>
+        <p>
+          this is a very short Paragraph :|, this paragrapgh is meant to be
+          short <br />
+          wow i made a mistake in the second sentence, its meanst to be
+          paragraph, not paragrapgh
+        </p>
+        <hr />
+      </div>
+      <div class="Topic">
+        <h2>UI Interactions of the week</h2>
+        <div>
+          <span>12 Feb 2019</span>|<span class="greyer"
+            >Express, Handlebars</span
+          >
         </div>
-    </div>
-    <footer>
-        <div class="flex gap-4">
-            <a href="#"><img src="/images/socials/facebook.png"></a>
-            <a href="#"><img src="/images/socials/twitter.png"></a>
-            <a href="#"><img src="/images/socials/instagram.png"></a>
-            <a href="#"><img src="/images/socials/linkedin.png"></a>
-        </div>
-        <p>Copyright ©2020 All rights reserved</p>
+        <p>
+          this is a very short Paragraph😐, this paragrapgh is meant to be short
+          <br />
+          bruh i made a mistake in the second sentence, its meanst to be
+          paragraph, not paragrapgh
+        </p>
+        <hr />
+      </div>
+    </main>
+    <footer class="flex flex-col items-center gap-8 py-10">
+      <div class="flex gap-4">
+        <a href="/"><img src="/images/socials/facebook.png" alt="" /></a>
+        <a href="/"><img src="/images/socials/instagram.png" alt="" /></a>
+        <a href="/"><img src="/images/socials/twitter.png" alt="" /></a>
+        <a href="/"><img src="/images/socials/linkedin.png" alt="" /></a>
+      </div>
+      <p>Copyright ©2020 All rights reserved</p>
     </footer>
-</body>
+  </body>
 </html>
