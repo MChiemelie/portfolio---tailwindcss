@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch",
-    "build": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --minify"
-  },
+  "dev": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch",
+  "build": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --minify"
+},
   "dependencies": {
     "tailwindcss": "^4.1.14",
     "@tailwindcss/cli": "^4.1.14"
